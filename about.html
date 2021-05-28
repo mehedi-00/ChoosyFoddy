@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChoosyFoddy | HTML Restaurant Theme</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fon-awesome.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsibe.css" />
+  </head>
+  <body>
+
+     <!-- book a table part satrt -->
+
+<!-- Modal -->
+<div class="modal" id="bookTableModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+            <div class="book-right-content text-center">
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h3>Your requirements</h3>
+              <form action="">
+                <div class="input-group">
+                  <input type="text" class="form-control" autocomplete="off"  placeholder="No. of Persons" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')">
+                  <div class="input-icon">
+                    <i class="fas fa-user-friends"></i>
+                  </div>
+                </div>
+                <div class="input-group" id="datetimepicker4" data-target-input="nearest" data-bs-toggle="tooltip" data-bs-placement="right" title="Click the icon for calendar">
+
+                  <input type="text" class="form-control" autocomplete="off"  data-target="#datetimepicker4" id="datePicker"   placeholder="Date" onkeydown="return false">
+                  <div class="input-icon" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                </div>
+                <div class="input-group" id="datetimepicker3" data-target-input="nearest" data-bs-toggle="tooltip" data-bs-placement="right" title="Click the icon for time">
+                  <input type="text" data-target="#datetimepicker3" autocomplete="off" class="form-control" id="timePicker" onkeydown="return false"  placeholder="Time">
+                  <div class="input-icon" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                    <i class="fa fa-clock"></i>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" autocomplete="off"  placeholder="Your Name">
+                  <div class="input-icon">
+                    <i class="fa fa-user-edit"></i>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" autocomplete="off"  placeholder="Your Phone No.">
+                  <div class="input-icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" autocomplete="off"  placeholder="Your Email">
+                  <div class="input-icon">
+                    <i class="fa fa-at"></i>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <button class="input-btn"> Submit</button>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- book a table part end -->
+
+    <!-- nav part start -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+      <div class="container">
+        <a class="logo" href="#">
+          <img src="./images/cf-logo.png" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chefs.html">OUR CHEFS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="404page.html">404 PAGE</a>
+            </li>
+          </ul>
+          <button class="nav-btn" data-bs-toggle="modal" data-bs-target="#bookTableModal">BOOK-A-TABLE</button>
+        </div>
+      </div>
+    </nav>
+    <!-- nav part end -->
+
+    <!-- breadcrump part start -->
+
+    <section id="breadcrump">
+      <div class="breadcrumb-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 bradcrumb-header text-center">
+              <h2>About Us</h2>
+              <h3>Discover our story</h3>
+              <img src="./images/title-shape.svg" alt="">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About Us </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- breadcrump part end -->
+
+    <!-- about part start -->
+
+    <section id="about" class="about-page">
+      <div class="row mx-0">
+        <div class="col-lg-6 order-2 order-lg-0">
+          <div class="about-left">
+            <img class="signature" src="./images/signature-3.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-right text-center text-lg-start">
+            <h2>What we are</h2>
+            <h3>Choosy Foody</h3>
+            <img src="./images/title-shape.svg" alt="" />
+            <h4>“We are open for breakfast, lunch and dinner”</h4>
+            <p class="about-first-para"> ChoosyFoody does the business where customers have the access as far-from-home everyday food needs like on a one-stop-shop. Our commitment is to collect fresh, locally produced, organic vegetables and natural seafood to make tasty dishes that you’ll not find anywhere. All of our products with the highest quality and value, healthy, nutritious.</p>
+
+            <p>  Our remarkable raw bar offers a variety of Jumbo Lobsters, Natural Oysters, Crispy Cherrystones and Littleneck Clams. Environment here is clean, fun and friendly, <span class="d-none d-xl-block"> so you, your friends and family feel very comfortable here. We promise to make ChoosyFoody the best place to not only for food, but also to get pleasure and as well as the best place to work for the employees.</span> </p>
+            <div class="about-ditail">
+              <p>Our Phone No.</p>
+              <h4>+1-123-456-7890</h4>
+            </div>
+            <div class="about-ditail">
+              <p>Opening Days</p>
+              <h4>Monday to Saterday</h4>
+            </div>
+            <div class="about-ditail">
+              <p>Opening Hours</p>
+              <h4>7am to 11pm</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about part end -->
+
+    <!-- footer-top part  start -->
+
+      <section id="footer-top">
+        <div class="container-fluid mx-0">
+          <div class="row ">
+            <div class="col-xl-4 col-sm-6 footer-top-left text-center">
+              <div class="footer-logo">
+                <a href="#"><img src="./images/cf-logo.png" alt=""></a>
+              </div>
+              <div class="footer-social">
+                <p>Around The Web</p>
+                <ul>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class=" fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-sm-6">
+              <div class="footer-menu text-center">
+                <ul>
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">ABOUT US</a></li>
+                  <li><a href="#">MENU</a></li>
+                  <li><a href="#">OUR CHEFS</a></li>
+                  <li><a href="#">CONTACT</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <div class="footer-3rd-part">
+                <ul>
+                  <li>
+                    <p>+1 234 567 890</p>
+                  </li>
+                  <li>
+                    <p class="mail">INFO@CHOOSYFOODY.COM</p>
+                  </li>
+                  <li>
+                    <p>77 GROVE STREET</p>
+                  </li>
+                  <li>
+                    <p>SOUTH NEWYORK</p>
+                  </li>
+                  <li>
+                    <p>NEWYORK 10013</p>
+                  </li>
+                  <li>
+                    <p>UNITED STATES</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 footer-top-right-part text-center">
+              <p>Write something to us</p>
+              <form action="">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Your Name" >
+                </div>
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Email" >
+                </div>
+                <div class="input-group">
+                  <textarea class="text-area" placeholder=" Your Massage"></textarea>
+                </div>
+                <div class="input-group">
+                  <button class="btn" type="submit">Submit</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- footer-top part  end -->
+
+    <!-- footer-last part satrt -->
+
+      <footer id="footer-last">
+        <div class="container-fluid mx-0">
+          <div class="row">
+            <div class="col-md-8 text-sm-center">
+              <div class="left-footer">
+                <p>© 2018-2021, All rights reserved .<a href="#"> Choosy Foody. </a> </p>
+                
+              </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+              <div class="right-footer">
+                <p>Designed by: Mehedi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- footer-last part end -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/rellax.min.js"></script>
+    <script src="./js/moment-with-locales.min.js"></script>
+    <script src="./js/http _themesitem.com_demos_html_choosyfoody_choosyfoody_datetimepicker_js_tempusdominus-bootstrap-4.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

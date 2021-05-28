@@ -1,0 +1,474 @@
+@media (min-width:992px) and (max-width:1200px){
+    .special-content h2::before {
+        left: 32%;
+    }
+    .special .special-content h2 {
+        margin-top: 90px;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .special-content h3 {
+        font-size: 50px;
+        padding: 5px 0 10px;
+    }
+
+    .menu-category button {
+        margin-right: 15px;
+        padding: 3px 10px;
+    }
+
+    .footer-logo {
+        margin-bottom: 100px;
+    }
+    .footer-menu ul li a{
+        padding-bottom: 30px;
+    }
+    .footer-top-right-part,
+    .footer-3rd-part{
+        margin-top: 40px;
+    }
+
+    .about-left {
+        height: 642px;
+    }
+    .about-ditail {
+        margin: 16px 0;
+    }
+    .signature {
+        bottom: 29px;
+        right: 40px;
+    }
+
+    .about-page .about-left {
+        height: 686px;
+    }
+    .about-page .about-right {
+        padding: 30px 0 0px 0;
+    }
+    .page-404 .col-left{
+        text-align: center;
+    }
+    .page-404 .col-left img{
+        width: 75%;
+    }
+
+}
+@media (min-width:768px) and (max-width:991.90px){
+        /* baner part */
+    .baner-item{
+        height: 500px;
+    }
+    #baner .row{
+        height: 500px;
+    }
+    .baner-content h2 {
+        position: relative;
+        margin-top: 60px;
+    }
+    .baner-title {
+        top: 17%;
+        right: 5%;
+    }
+    .b-right {
+        right: 43%;
+    }
+
+    .special .special-content h2 {
+        margin-top: 50px;
+        font-size: 35px;
+    }
+    .special-content h2::before {
+        left: 30%;
+        vertical-align: bottom;
+        height: 0.6em;
+        display: inline-block;
+    }
+    .special-content h3 {
+        font-size: 35px;
+        line-height: 15px;
+        padding-bottom: 15px;
+    }
+    .book-left h3{
+        font-size: 35px;
+    }
+
+    .chefs-list-overlay .content h4 {
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+    .chefs-list-overlay .content p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        letter-spacing: 0px;
+    }
+    .chefs-list-overlay .content ul li {  
+        padding: 5px;
+    }
+    .chefs-list-overlay .content ul li a{  
+        font-size: 15px;
+    }
+    .news-left {
+        padding: 100px 0;
+    }
+    .news-left h3 {
+        color: #fff;
+        font-size: 38px;
+    }
+    .footer-logo {
+        margin-bottom: 100px;
+    }
+    .footer-menu ul li a{
+        padding-bottom: 30px;
+    }
+    .footer-top-right-part,
+    .footer-3rd-part{
+        margin-top: 40px;
+    }
+    .signature {
+        bottom: 43px;
+        right: 132px;
+        width: 277px;
+    }
+    .page-404 .col-left{
+        text-align: center;
+    }
+    .page-404 .col-left img{
+        width: 75%;
+    }
+
+}
+@media (min-width:576px) and (max-width:767.90px){
+    /* baner part */
+    .baner-item{
+        height: 500px;
+    }
+    #baner .row{
+        height: 500px;
+    }
+    .b-right {
+        right: 38%;
+    }
+    .special .special-content h2 {
+        margin-top: 36px;
+        font-size: 30px;
+    }
+    .special-content h2::before {
+        left: 27%;
+        
+    }
+    .special-content h3 {
+        font-size: 30px;
+        line-height: 30px;
+        padding-bottom: 0px;
+    }
+    .menu-category button {
+        padding: 3px 8px;
+        margin-right: 5px;
+    }
+    .testi-icon-left,
+    .testi-icon-right{
+        position: absolute;
+        top: 105%;
+        transform: translatex(-50%);
+        -webkit-transform: translatex(-50%);
+}
+    .testi-icon-left{
+        left: 40%;
+    }
+    .testi-icon-right{
+        right: 40%;
+    }
+    .testimonial-header h3 {
+        line-height: 55px;
+        font-size: 30px;
+    }
+    .news-right {
+        padding: 150px 0;
+    }
+
+    .footer-social ul li {  
+        padding: 10px;
+    }
+    .footer-logo {
+        margin-bottom: 90px;
+    }
+    .footer-menu ul li a{
+        padding-bottom: 25px;
+    }
+    .footer-top-right-part,
+    .footer-3rd-part{
+        margin-top: 35px;
+    }
+    .footer-3rd-part ul li .mail {
+        font-size: 14px;
+    }
+    .about-left {
+        height: 680px;
+    }
+    .signature {
+        bottom: 27px;
+        right: 74px;
+    }
+    .contact-detail {
+        margin-top: 0;
+    }
+    #contact-us-page .container{
+        max-width: 100% !important;
+    }
+    #contact-us-page .content {
+        border-right: 0;
+        margin-bottom: 30px;
+    }
+    .contact-detail p {
+        padding: 5px 0;
+    }
+    .page-404 .col-left{
+        text-align: center;
+    }
+    .page-404 .col-left img{
+        width: 90%;
+    }
+
+}
+
+@media (max-width:767.90px){
+    .book-left{
+        background-position: center;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
+    }
+
+    .book-right{
+        position: initial;
+        padding-bottom: 40px;
+        margin-top: -20px;
+    }
+    .book-right-content{
+        position: initial;
+        transform: initial;
+        padding: 20px;
+        left: 0;
+        background-color: #fff;
+        z-index: 55;
+        width: 90%;
+        -webkit-transform: initial;
+        margin: auto;
+}
+.tooltip{
+    display: none;
+}
+
+}
+
+@media (max-width:575px){
+/* baner-item */
+.baner-item{
+    height: 500px;
+}
+#baner .row{
+    height: 500px;
+}
+.baner-content p span{
+    display: none;
+}
+.baner-content h3{
+    font-size: 30px;
+}
+.baner-content h2::after {
+	width: 100px;
+}
+.b-left{
+    left: 34%;
+}
+.b-right {
+    right: 34%;
+}
+
+
+/* about part */
+.about-left {
+	height: 400px;
+}
+.signature {
+	bottom: 35px;
+	right: 15px;
+	width: 190px;
+}
+
+/* special part  */
+.special-content h3 {
+	color: #fff;
+	font-size: 25px;
+}
+.special .special-content h2 {
+    margin-top: 70px;
+    font-size: 30px;
+    line-height: 36px;
+}
+.special-content h2::before {
+    left: 15%;
+    
+}
+.special-content h3 {
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 0px;
+}
+.special-content p {
+	padding: 0 5px;
+}
+.menu-category button {
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 5px;
+	padding: 3px 7px;
+}
+.testi-icon-left,
+    .testi-icon-right{
+        position: absolute;
+        top: 105%;
+        transform: translatex(-50%);
+        -webkit-transform: translatex(-50%);
+}
+    .testi-icon-left{
+        left: 30%;
+    }
+    .testi-icon-right{
+        right: 30%;
+    }
+    .input-group-btn{
+    padding-left: 25%;
+    }   
+    .news-left h3 {
+	font-size: 25px;
+    }
+    .news-left .input-group input {
+        border-right: 1px solid #fff;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .news-left {
+        padding: 50px 0;
+    }
+
+    .footer-logo {
+        margin-bottom: 50px;
+    }
+    .footer-social p {
+        margin-top: 60px;
+    }
+    .footer-menu ul li a {
+        padding-bottom: 20px;
+    }
+    .footer-menu{
+        margin: 30px 0;
+    }
+    .footer-3rd-part{
+        margin: 30px 0;
+    }
+    .left-footer p{
+        text-align: center;
+    }
+    .contact-detail {
+        margin-top: 0;
+    }
+    #contact-us-page .content {
+        border-right: 0;
+        margin-bottom: 30px;
+    }
+    .contact-detail p {
+        padding: 5px 0;
+    }
+
+    .form-header p {
+        font-size: 19px;
+        padding-bottom: 10px;
+    }
+    .form-page .input-group {
+        padding-bottom: 10px;
+    }
+    .page-404 .col-left{
+        text-align: center;
+    }
+    .page-404 .col-left img{
+        width: 90%;
+    }
+    .page-404 .col-right {
+        padding: 30px 65px;
+    }
+
+}
+@media (max-width:991.90px){
+    #myNav ul li {
+        padding: 5px 0;
+    }
+    #myNav ul li a {
+        padding: 5px 0; 
+    }
+    #myNav ul{
+        background-color: #000;
+    }
+    .about-left{
+        background-position: center;
+    }
+    .about-page .about-left {
+        margin-top: 10px;
+        z-index: 5;
+    }
+    
+}
+@media (max-width:1199.90px){
+    #food-menu .container{
+        max-width: 100%;
+    }
+    .menu-category button{
+        display: inline-block;
+        font-size: 16px;
+    }
+    .food-menu{
+        margin-top: 0;
+    }
+    .menu-category {
+        padding-top: 10px;
+        padding-bottom: 35px;
+    }
+    .menu-page .food-menu{
+        padding-bottom: 0;
+    }
+
+}
+
+@media(min-width:992px){
+    #myNav ul li a::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 40px;
+        height: 2px;
+        background-color: var(--maincolor);
+        opacity: 0;
+        transition: .5s;
+        -webkit-transition: .5s;
+    }
+    #myNav ul li:hover a::after{
+        opacity: 1;
+    }
+}
+@media (min-width:1201px){
+    .b-left,
+    .b-right{
+        top: 50%;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+}
+    .b-left{
+        left: 90%;
+    }
+    .b-right{
+        right: 30px;
+    }
+}

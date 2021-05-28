@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChoosyFoddy | HTML Restaurant Theme</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/fon-awesome.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsibe.css" />
+  </head>
+  <body>
+
+   
+     <!-- book a table part satrt -->
+
+<!-- Modal -->
+<div class="modal" id="bookTableModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+            <div class="book-right-content text-center">
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h3>Your requirements</h3>
+              <form action="">
+                <div class="input-group">
+                  <input type="text" class="form-control" autocomplete="off"  placeholder="No. of Persons" oninput="this.value=this.value.replace(/(?![0-9])./gmi,'')">
+                  <div class="input-icon">
+                    <i class="fas fa-user-friends"></i>
+                  </div>
+                </div>
+                <div class="input-group" id="datetimepicker4" data-target-input="nearest" data-bs-toggle="tooltip" data-bs-placement="right" title="Click the icon for calendar">
+
+                  <input type="text" class="form-control" autocomplete="off"  data-target="#datetimepicker4" id="datePicker"   placeholder="Date" onkeydown="return false">
+                  <div class="input-icon" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                </div>
+                <div class="input-group" id="datetimepicker3" data-target-input="nearest" data-bs-toggle="tooltip" data-bs-placement="right" title="Click the icon for time">
+                  <input type="text" data-target="#datetimepicker3" autocomplete="off" class="form-control" id="timePicker" onkeydown="return false"  placeholder="Time">
+                  <div class="input-icon" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                    <i class="fa fa-clock"></i>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" autocomplete="off"  placeholder="Your Name">
+                  <div class="input-icon">
+                    <i class="fa fa-user-edit"></i>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" autocomplete="off"  placeholder="Your Phone No.">
+                  <div class="input-icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" autocomplete="off"  placeholder="Your Email">
+                  <div class="input-icon">
+                    <i class="fa fa-at"></i>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <button class="input-btn"> Submit</button>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- book a table part end -->
+
+    <!-- nav part start -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+      <div class="container">
+        <a class="logo" href="#">
+          <img src="./images/cf-logo.png" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chefs.html">OUR CHEFS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="404page.html">404 PAGE</a>
+            </li>
+          </ul>
+          <button class="nav-btn" data-bs-toggle="modal" data-bs-target="#bookTableModal">BOOK-A-TABLE</button>
+        </div>
+      </div>
+    </nav>
+    <!-- nav part end -->
+
+    <!-- breadcrump part start -->
+
+    <section id="breadcrump">
+      <div class="breadcrumb-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 bradcrumb-header text-center">
+              <h2>Our Menu</h2>
+              <h3>Discover the taste</h3>
+              <img src="./images/title-shape.svg" alt="">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Menu </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- breadcrump part end -->
+
+    <!-- food-menu part start -->
+
+    <section id="food-menu" class="menu-page"> 
+      <div class="container-fluid p-0">
+        <div class="row mx-0">
+          <div class="col-xl-2 p-0">
+            <div class="food-menu">
+              <p>ChoosyFoody</p>
+              <h3>Menu</h3>
+
+              <div class="menu-category m-auto button-group filters-button-group">
+
+                <button type="button" class="button active" data-filter="*">All
+                    Dishes</button>
+
+                <button type="button" class="button"
+                    data-filter=".breakfast">Breakfast</button>
+
+                <button type="button" class="button" data-filter=".lunch">Lunch</button>
+
+                <button type="button" class="button"
+                    data-filter=".dinner">Dinner</button>
+
+                <button type="button" class="button"
+                    data-filter=".drinks">Drinks</button>
+
+                <button type="button" class="button"
+                    data-filter=".snacks">Snacks</button>
+
+            </div>
+            </div>
+          </div>
+          <div class="col-xl-10 p-0">
+            <div class="row grid p-0 mx-0">
+              <div class="element-item col-md-3 col-sm-6 mix lunch drinks snacks p-0">
+                <div class="food-item">
+                  <img src="./images/menu-01.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>Broasted Chicken</p>
+                    <h5>$25.90</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item col-md-3 col-sm-6 mix  breakfast lunch dinner drinks p-0">
+                <div class="food-item">
+                  <img src="./images/menu-02.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>Athens Chicken Breast</p>
+                    <h5>$25.90</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item col-md-3 col-sm-6 mix lunch dinner drinks snacks p-0">
+                <div class="food-item">
+                  <img src="./images/menu-03.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>Steak-Shrimp Combo</p>
+                    <h5>$15.90</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item col-md-3 col-sm-6 mix breakfast lunch drinks snacks p-0">
+                <div class="food-item">
+                  <img src="./images/menu-04.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>North Atlantic Haddock</p>
+                    <h5>$40.90</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item col-md-3 mix breakfast lunch dinner snacks d-none d-md-block p-0">
+                <div class="food-item">
+                  <img src="./images/menu-05.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>Apple Ceider squash and pork</p>
+                    <h5>$15.90</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item col-md-3 mix breakfast lunch dinner drinks snacks d-none d-md-block p-0">
+                <div class="food-item">
+                  <img src="./images/menu-06.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>Ribeye Steak</p>
+                    <h5>$25.90</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item col-md-3 mix breakfast dinner drinks d-none d-md-block p-0">
+                <div class="food-item">
+                  <img src="./images/menu-07.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>Fried Mushrooms</p>
+                    <h5>$23.90</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item col-md-3 mix breakfast dinner drinks snacks d-none d-md-block p-0">
+                <div class="food-item">
+                  <img src="./images/menu-08.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>Breaded Calamari Rings</p>
+                    <h5>$14.90</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item col-md-3 mix breakfast lunch drinks snacks d-none d-md-block p-0">
+                <div class="food-item">
+                  <img src="./images/menu-09.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>Grecian Salata</p>
+                    <h5>$22.90</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item col-md-3 mix breakfast lunch dinner snacks d-none d-md-block p-0">
+                <div class="food-item">
+                  <img src="./images/menu-10.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>Crabmeat Julienne</p>
+                    <h5>$19.90</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item col-md-3 mix breakfast lunch dinner drinks snacks d-none d-md-block p-0">
+                <div class="food-item">
+                  <img src="./images/menu-11.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>Chicken Lo-Cal Plate</p>
+                    <h5>$15.90</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="element-item col-md-3 mix breakfast dinner snacks d-none d-md-block p-0">
+                <div class="food-item">
+                  <img src="./images/menu-12.jpg" alt="">
+                  <div class="food-overlay">
+                    <p>Apple Ceider squash and pork</p>
+                    <h5>$18.90</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 pagination-block">
+          <nav>
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+              <li class="page-item"> <a class="page-link page-links active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link page-links " href="#">2</a></li>
+              <li class="page-item"><a class="page-link page-links" href="#">3</a></li>
+              <li class="page-item"><a class="page-link page-links " href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section> 
+    <!-- food-menu part end -->
+
+   
+
+    <!-- footer-top part  start -->
+
+      <section id="footer-top">
+        <div class="container-fluid mx-0">
+          <div class="row ">
+            <div class="col-xl-4 col-sm-6 footer-top-left text-center">
+              <div class="footer-logo">
+                <a href="#"><img src="./images/cf-logo.png" alt=""></a>
+              </div>
+              <div class="footer-social">
+                <p>Around The Web</p>
+                <ul>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class=" fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-sm-6">
+              <div class="footer-menu text-center">
+                <ul>
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#">ABOUT US</a></li>
+                  <li><a href="#">MENU</a></li>
+                  <li><a href="#">OUR CHEFS</a></li>
+                  <li><a href="#">CONTACT</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <div class="footer-3rd-part">
+                <ul>
+                  <li>
+                    <p>+1 234 567 890</p>
+                  </li>
+                  <li>
+                    <p class="mail">INFO@CHOOSYFOODY.COM</p>
+                  </li>
+                  <li>
+                    <p>77 GROVE STREET</p>
+                  </li>
+                  <li>
+                    <p>SOUTH NEWYORK</p>
+                  </li>
+                  <li>
+                    <p>NEWYORK 10013</p>
+                  </li>
+                  <li>
+                    <p>UNITED STATES</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 footer-top-right-part text-center">
+              <p>Write something to us</p>
+              <form action="">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Your Name" >
+                </div>
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Email" >
+                </div>
+                <div class="input-group">
+                  <textarea class="text-area" placeholder=" Your Massage"></textarea>
+                </div>
+                <div class="input-group">
+                  <button class="btn" type="submit">Submit</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- footer-top part  end -->
+
+    <!-- footer-last part satrt -->
+
+      <footer id="footer-last">
+        <div class="container-fluid mx-0">
+          <div class="row">
+            <div class="col-md-8 text-sm-center">
+              <div class="left-footer">
+                <p>© 2018-2021, All rights reserved .<a href="#"> Choosy Foody. </a> </p>
+                
+              </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+              <div class="right-footer">
+                <p>Designed by: Mehedi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- footer-last part end -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/rellax.min.js"></script>
+    <script src="./js/moment-with-locales.min.js"></script>
+    <script src="./js/http _themesitem.com_demos_html_choosyfoody_choosyfoody_datetimepicker_js_tempusdominus-bootstrap-4.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
