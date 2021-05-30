@@ -443,6 +443,10 @@
     #myNav ul{
         background-color: #000;
     }
+    .nav-btn{
+        display: block;
+        margin: auto;
+    }
     .about-left{
         background-position: center;
     }
