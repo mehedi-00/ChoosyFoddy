@@ -51,23 +51,31 @@
     .page-404 .col-left img{
         width: 75%;
     }
+   
 
 }
 @media (min-width:768px) and (max-width:991.90px){
+    .custom-nav .container{
+        max-width: 1380px !important;
+    }
         /* baner part */
     .baner-item{
-        height: 500px;
+        height: 550px;
     }
     #baner .row{
-        height: 500px;
+        height: 550px;
     }
     .baner-content h2 {
         position: relative;
         margin-top: 60px;
     }
     .baner-title {
-        top: 17%;
+        top: 34%;
         right: 5%;
+        padding: 0px 10px;
+    }
+    .title-dec h4 {
+        font-size: 14px;
     }
     .b-right {
         right: 43%;
@@ -186,6 +194,9 @@
     .news-right {
         padding: 150px 0;
     }
+    .book-left {
+        padding: 80px 0;
+    }
 
     .footer-social ul li {  
         padding: 10px;
@@ -294,6 +305,13 @@
 	right: 15px;
 	width: 190px;
 }
+.about-right h3{
+    font-size: 35px;
+}
+.about-right h4 {
+	font-size: 15px;
+	margin: 18px 0;
+}
 
 /* special part  */
 .special-content h3 {
@@ -323,6 +341,9 @@
 	margin-right: 5px;
 	padding: 3px 7px;
 }
+.testimonial-header h3 {
+	font-size: 46px;
+}
 .testi-icon-left,
     .testi-icon-right{
         position: absolute;
@@ -340,7 +361,7 @@
     padding-left: 25%;
     }   
     .news-left h3 {
-	font-size: 25px;
+	    font-size: 25px;
     }
     .news-left .input-group input {
         border-right: 1px solid #fff;
@@ -350,12 +371,23 @@
     .news-left {
         padding: 50px 0;
     }
+    .news-left .input-group .s-btn {
+        position: relative;
+        left: 50%;
+    }
+    .news-right {
+        padding: 150px 0;
+    }
 
     .footer-logo {
         margin-bottom: 50px;
     }
     .footer-social p {
         margin-top: 60px;
+    }
+    .footer-social ul li {
+        padding: 13px;
+        margin-top: 20px;
     }
     .footer-menu ul li a {
         padding-bottom: 20px;
@@ -395,6 +427,9 @@
     }
     .page-404 .col-right {
         padding: 30px 65px;
+    }
+    .chefs-header h3{
+        font-size: 28px;
     }
 
 }

@@ -113,6 +113,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,ul,li,ol{
     font-size: var(--asize);
     font-weight: 700;
     border-color: transparent;
+    margin: 25px 0;
 }
 .nav-btn{
     text-align: center;
@@ -433,7 +434,7 @@ color: #fff;
 .food-menu{
     margin-top: -40px;
     padding-top: 50px;
-    background-color: #000;
+    background-color: #16191E;
     text-align: center;
     color: #fff;
     /* padding-bottom: 59px; */
@@ -821,6 +822,7 @@ color: #fff;
     background-color: var(--maincolor);
     border: 1px solid #f15f2a;
 }
+
 
 /* chefs part css */
 
