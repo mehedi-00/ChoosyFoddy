@@ -218,7 +218,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,ul,li,ol{
     right: 0;
     bottom: 0;
     background: #000 url("../images/bg-pattern.png") repeat scroll 0 0;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: -1;
 }
 #baner .row{
@@ -437,8 +437,7 @@ color: #fff;
     background-color: #16191E;
     text-align: center;
     color: #fff;
-    /* padding-bottom: 59px; */
-    margin-right: -3px;
+    margin-right: -1px;
 }
 .food-menu p{
     line-height: 24px;
@@ -451,8 +450,8 @@ color: #fff;
     font-weight: 500;
 }
 .menu-category{
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 122px;
 }
 .menu-category button{
     display: block;
@@ -461,7 +460,7 @@ color: #fff;
     border: 1px solid transparent;
     margin: auto;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 7px;
     font-size: 18px;
     cursor: pointer;
 }
@@ -820,9 +819,11 @@ color: #fff;
 /* tooltip part css */
 .tooltip-inner{
     background-color: var(--maincolor);
-    border: 1px solid #f15f2a;
 }
-
+.tooltip-arrow::before{
+    border-left-color: var(--maincolor) !important;
+    border-right-color: var(--maincolor) !important;
+}
 
 /* chefs part css */
 
@@ -1116,14 +1117,20 @@ color: #fff;
 }
  #bookTableModal .close{
     position: absolute;
+    font-size: 22px;
     top: 5px;
     right: 5px;
     color: var(--maincolor);
+    border: none !important;
+    background-color: #fff;
 }
 
 #bookTablemodal .tooltip{
     z-index: 9999999;
 } 
+.modal-open {
+	overflow: auto;
+}
 
 
 /* breadcruump part css */
@@ -1215,8 +1222,11 @@ color: #fff;
 .menu-page .food-menu{
     position: relative;
     z-index: 1;
-    padding-bottom: 200px;
-    margin-right: 0;
+    padding-bottom: 158px;
+    margin-right: -3px;
+}
+.menu-page .menu-category button{
+    padding: 10px;
 }
 .menu-page .food-item {
 	transition: .6s;
